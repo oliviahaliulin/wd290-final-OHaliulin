@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>News Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+     <div class="header">
+    <h1>News Dashboard</h1>
+
+    <div class="top-right">
+      <span>Latest News</span>
+      <span id="currentDate"></span>
+    </div>
+  </div>
+   
+   <div class="row featured">
+
+    <div class="col-lg-8">
+      <img id="featuredImage" class="img d-none">
+    </div>
+
+    <div class="col-lg-4 box">
+      <h2 id="featuredTitle"></h2>
+      <p id="featuredText"></p>
+      <a id="featuredLink" target="_blank">Read More ></a>
+    </div>
+
+  </div>
+
+  <div class="row main">
+
+
+    <div class="col-lg-4 left">
+
+      <div class="section">
+        <h3>Current Weather</h3>
+
+        <p id="weatherCity"></p>
+
+        <div class="temp">
+          <span id="weatherIcon"></span>
+          <span id="weatherTemp"></span>
+        </div>
+
+        <p id="weatherCondition"></p>
+      </div>
+
 
     <script src="script.js"></script>
 </body>
