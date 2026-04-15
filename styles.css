@@ -7,3 +7,21 @@ body {
 .container {
   max-width: 1200px;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #000;
+}
+
+.header h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.top-right span {
+  margin-left: 20px;
+  font-size: 14px;
+}
