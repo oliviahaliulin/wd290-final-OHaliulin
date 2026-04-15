@@ -72,14 +72,11 @@ const article10Title = document.getElementById('article10Title');
 const article10Text = document.getElementById('article10Text');
 const article10Link = document.getElementById('article10Link');
 
-
-// FIXED CITY
 const cityName = 'Nashville';
 const latitude = 36.16;
 const longitude = -86.78;
 
-// KEEP YOUR URL (just make sure key is yours)
-const newsUrl = 'https://newsdata.io/api/1/latest?apikey=YOUR_KEY&language=en&category=science,food,crime&timezone=america/chicago&image=1';
+const newsUrl = 'https://newsdata.io/api/1/latest?apikey=pub_a7fa61e543004010859e3816efd3f471&language=en&category=science,food,crime&timezone=america/chicago&image=1';
 
 function showDate() {
   const today = new Date();
