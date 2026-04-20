@@ -99,9 +99,7 @@ body {
   color: #3a4fbf;
 }
 
-.hidden {
-  display: none;
-}
+
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
