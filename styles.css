@@ -5,10 +5,12 @@ body {
 }
 
 .container {
+  /* bootstrap */ 
   max-width: 1200px;
 }
 
 .header {
+    /* bootstrap */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,27 +19,32 @@ body {
 }
 
 .header h1 {
+    /* bootstrap (font size only)*/
   font-size: 28px;
   letter-spacing: 1px;
 }
 
 .top-right span {
+    /* bootstrap */
   margin-left: 20px;
   font-size: 14px;
 }
 
 .featured {
+    /* bootstrap */
   margin-top: 25px;
   margin-bottom: 30px;
 }
 
 .featured img {
+    /* bootstrap */
   border-radius: 15px 0 0 15px;
   height: 100%;
   object-fit: cover;
 }
 
 .box {
+    /* bootstrap (padding and border radius only)*/
   background: #e6d3c7;
   padding: 30px;
   border-radius: 0 15px 15px 0;
@@ -45,28 +52,33 @@ body {
 }
 
 .box h2 {
+    /* bootstrap */
   font-size: 22px;
   line-height: 1.4;
 }
 
 .box a {
   color: #2f3fd8;
+    /* bootstrap */
   text-decoration: none;
   font-size: 16px;
 }
 
 .main {
+    /* bootstrap */
   border-top: 2px solid #000;
   padding-top: 20px;
 }
 
 .left {
+    /* bootstrap */
   border-right: 2px solid #000;
   padding-right: 20px;
 }
 
 .section h3,
 .right h3 {
+    /* bootstrap */
   font-size: 20px;
   border-bottom: 2px solid #000;
   padding-bottom: 5px;
@@ -74,21 +86,25 @@ body {
 }
 
 .temp {
+    /* bootstrap */
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 #weatherTemp {
+    /* bootstrap */
   font-size: 60px;
 }
 
 #weatherCity {
+    /* bootstrap (font size only)*/
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 .line {
+    /* bootstrap */
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000;
@@ -99,20 +115,52 @@ body {
   color: #3a4fbf;
 }
 
+/* articles */ 
 
+.right .row {
+  row-gap: 25px;
+}
 
-/* RESPONSIVE */
+.item {
+    /* bootstrap */
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.item a {
+    /* bootstrap (all except color)*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #3a4fbf;
+}
+
+.arrow {
+    /* bootstrap */
+  font-size: 18px;
+}
+
+.col-md-6 {
+    /* bootstrap */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media (max-width: 992px) {
   .left {
+      /* bootstrap */
     border-right: none;
     margin-bottom: 30px;
   }
 
   .featured img {
+      /* bootstrap */
     border-radius: 15px 15px 0 0;
   }
 
   .box {
+      /* bootstrap */
     border-radius: 0 0 15px 15px;
   }
-}
+} 

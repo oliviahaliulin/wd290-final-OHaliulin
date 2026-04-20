@@ -103,12 +103,13 @@ async function loadWeather() {
     const data = await response.json();
     const weather = getWeatherInfo(data.current.weather_code);
 
+    console.log(weather);
+
     const tempF = (data.current.temperature_2m * 9/5 + 32).toFixed(0);
 
     weatherIcon.textContent = weather.icon;
     weatherTemp.textContent = tempF + '°';
     weatherCondition.textContent = weather.text;
-    weatherWind.textContent = data.current.wind_speed_10m + ' km/h';
 
   } catch (error) {
     weatherError.textContent = 'Could not load weather data.';
