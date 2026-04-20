@@ -139,6 +139,8 @@ async function loadNews() {
     const response = await fetch(newsUrl);
     const data = await response.json();
 
+    console.log(data);
+
     if (!data.results || data.results.length === 0) {
       newsError.textContent = 'Could not load news articles.';
       newsError.classList.remove('d-none');
