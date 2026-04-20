@@ -25,3 +25,32 @@ body {
   margin-left: 20px;
   font-size: 14px;
 }
+
+.featured {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.featured img {
+  border-radius: 15px 0 0 15px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  background: #e6d3c7;
+  padding: 30px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.box h2 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.box a {
+  color: #2f3fd8;
+  text-decoration: none;
+  font-size: 16px;
+}

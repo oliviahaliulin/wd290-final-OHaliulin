@@ -1,3 +1,4 @@
+console.log ("js is connected");
 const currentDate = document.getElementById('currentDate');
 
 const weatherCity = document.getElementById('weatherCity');
