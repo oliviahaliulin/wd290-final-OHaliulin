@@ -98,3 +98,23 @@ body {
 .line span:first-child {
   color: #3a4fbf;
 }
+
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .left {
+    border-right: none;
+    margin-bottom: 30px;
+  }
+
+  .featured img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .box {
+    border-radius: 0 0 15px 15px;
+  }
+}
