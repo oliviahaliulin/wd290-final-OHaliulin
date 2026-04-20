@@ -11,68 +11,66 @@
 
 <body>
 
-<div class="container">
+<div class="container py-4">
 
-  <div class="header">
-    <h1>News Dashboard</h1>
+  <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-4">
+    <h1 class="h3 m-0 title">News Dashboard</h1>
 
-    <div class="top-right">
+    <div class="d-flex gap-4 small">
       <span>Latest News</span>
       <span id="currentDate"></span>
     </div>
   </div>
 
-  <div class="row featured">
+  <div class="row mb-4">
 
     <div class="col-lg-8">
-      <img id="featuredImage" class="img-fluid d-none">
+      <img id="featuredImage" class="img-fluid rounded-start w-100 h-100 d-none featured-img">
     </div>
 
-    <div class="col-lg-4 box">
-
+    <div class="col-lg-4 p-4 rounded-end shadow feature-box">
       <p id="featuredSource" class="hidden"></p>
 
-      <h2 id="featuredTitle"></h2>
-      <p id="featuredText"></p>
-      <a id="featuredLink" target="_blank">Read More ></a>
+      <h2 id="featuredTitle" class="h5"></h2>
+      <p id="featuredText" class="small"></p>
+      <a id="featuredLink" class="text-decoration-none">Read More ></a>
     </div>
 
   </div>
 
-  <div class="row main">
+  <div class="row border-top border-dark pt-3">
 
-    <div class="col-lg-4 left">
+    <div class="col-lg-4 border-end border-dark pe-4">
 
-      <div class="section">
-        <h3>Current Weather</h3>
+      <div class="mb-4">
+        <h3 class="h6 border-bottom border-dark pb-1 mb-3">Current Weather</h3>
 
-        <p id="weatherCity"></p>
+        <p id="weatherCity" class="small city"></p>
 
-        <div class="temp">
+        <div class="d-flex align-items-center gap-2">
           <span id="weatherIcon"></span>
-          <span id="weatherTemp"></span>
+          <span id="weatherTemp" class="temp"></span>
         </div>
 
-        <p id="weatherCondition"></p>
-
+        <p id="weatherCondition" class="small"></p>
         <p id="weatherError" class="hidden"></p>
       </div>
 
-      <div class="section">
-        <h3>Currency Rates</h3>
+      <div>
+        <h3 class="h6 border-bottom border-dark pb-1 mb-3">Currency Rates</h3>
 
-        <div class="line">
-          <span>USD / EUR</span>
+        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+          <span class="rate-label">USD / EUR</span>
           <span id="rateEUR"></span>
         </div>
 
-        <div class="line">
-          <span>USD / GBP</span>
+        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+          <span class="rate-label">USD / GBP</span>
           <span id="rateGBP"></span>
         </div>
 
-        <div class="line">
-          <span>USD / JPY</span>
+        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+          <span class="rate-label">USD / JPY</span>
           <span id="rateJPY"></span>
         </div>
 
@@ -81,104 +79,68 @@
 
     </div>
 
-    <div class="col-lg-8 right">
+    <div class="col-lg-8 ps-4">
 
-      <h3>Latest News</h3>
-      
+      <h3 class="h6 border-bottom border-dark pb-1 mb-3">Latest News</h3>
       <p id="newsError" class="hidden"></p>
 
-      <div class="row">
+      <div class="row g-4">
 
-        <div class="col-md-6 item">
+        <div class="col-md-6">
           <p id="article1Source" class="hidden"></p>
           <p id="article1Text" class="hidden"></p>
-          <a id="article1Link" target="_blank">
+
+          <a id="article1Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article1Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article2Source" class="hidden"></p>
-          <p id="article2Text" class="hidden"></p>
-          <a id="article2Link" target="_blank">
-            <span id="article2Title"></span> 
-            <span class="arrow"></span>
+          <a id="article2Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
+            <span id="article2Title"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article3Source" class="hidden"></p>
-          <p id="article3Text" class="hidden"></p>
-          <a id="article3Link" target="_blank">
+          <a id="article3Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article3Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article4Source" class="hidden"></p>
-          <p id="article4Text" class="hidden"></p>
-          <a id="article4Link" target="_blank">
+          <a id="article4Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article4Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article5Source" class="hidden"></p>
-          <p id="article5Text" class="hidden"></p>
-          <a id="article5Link" target="_blank">
+          <a id="article5Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article5Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article6Source" class="hidden"></p>
-          <p id="article6Text" class="hidden"></p>
-          <a id="article6Link" target="_blank">
+          <a id="article6Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article6Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article7Source" class="hidden"></p>
-          <p id="article7Text" class="hidden"></p>
-          <a id="article7Link" target="_blank">
+          <a id="article7Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article7Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article8Source" class="hidden"></p>
-          <p id="article8Text" class="hidden"></p>
-          <a id="article8Link" target="_blank">
+          <a id="article8Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article8Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article9Source" class="hidden"></p>
-          <p id="article9Text" class="hidden"></p>
-          <a id="article9Link" target="_blank">
+          <a id="article9Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article9Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
-        </div>
 
-        <div class="col-md-6 item">
-          <p id="article10Source" class="hidden"></p>
-          <p id="article10Text" class="hidden"></p>
-          <a id="article10Link" target="_blank">
+          <a id="article10Link" class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 text-decoration-none article">
             <span id="article10Title"></span>
-            <span class="arrow"></span>
+            <span class="arrow">></span>
           </a>
         </div>
-
+        
       </div>
 
     </div>
@@ -188,6 +150,5 @@
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
